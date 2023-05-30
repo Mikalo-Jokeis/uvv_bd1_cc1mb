@@ -4,7 +4,7 @@
 
 
 /*
- * Excluir o banco de dados uvv  caso já exista
+ * Excluir o banco de dados uvv caso já exista
  * Excluir o usuário michel caso já exista
  */ 
 DROP DATABASE IF EXISTS uvv;
@@ -511,5 +511,4 @@ CHECK 			(quantidade >= 0);
 COMMENT ON CONSTRAINT check_pedidos_itens_numero_da_linha 	ON pedidos_itens	IS 	'Verifica se o numero_da_linha é um número maior que 0';
 COMMENT ON CONSTRAINT check_pedidos_itens_preco_unitario	ON pedidos_itens	IS 	'Verifica se o preco_unitario é um número maior que 0';
 COMMENT ON CONSTRAINT check_pedidos_itens_quantidade		ON pedidos_itens	IS 	'Verifica se a quantidade é um número maior, ou igual, que 0';
-
 
